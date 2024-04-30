@@ -1,0 +1,227 @@
+.current-date {
+  text-align: center;
+}
+
+.lesson-tab {
+  padding: 10px 20px;
+  margin-right: 0 !important;
+  cursor: pointer;
+}
+
+.lesson-tab.selected {
+  color: black;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: none;
+}
+
+.lesson-tab:hover {
+  color: black;
+  background-color: #f5f5f5;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.col-md-12 a:hover {
+  text-decoration: none;
+}
+
+.col-md-12 hr {
+  margin: 0;
+  margin-left: 99px;
+}
+
+thead {
+  background-color: #7dc4ff;
+  border-top: 2px solid #229cff;
+  color: white;
+}
+
+.form-control[disabled] {
+  background-color: transparent;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding-left: 0;
+  font-weight: 500;
+}
+
+.num-w {
+  width: 75px !important;
+  text-align: center;
+  padding: 6px;
+}
+
+textarea {
+  min-height: 38px !important;
+}
+
+.navbar {
+  background-color: #4aa2ff;
+}
+
+.navbar-nav {
+  align-items: center;
+}
+
+.nav-item.attendance .nav-link {
+  color: white !important;
+  font-size: 17px;
+  padding-top: 7px;
+}
+
+.nav-item.attendance .nav-link:hover {
+  color: white !important;
+}
+
+.navbar-nav .nav-link {
+  color: #d8d8d8 !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ececec !important;
+}
+
+.navbar-brand {
+  color: white !important;
+}
+
+.navbar-nav .nav-link .fa-solid {
+  font-size: 1.4em;
+  margin-left: 10px;
+}
+
+header .fa-solid {
+  font-size: 1.5em;
+}
+
+.fg-gray label {
+  color: #b5b5b5;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.va-m {
+  vertical-align: middle !important;
+}
+
+.ta-c {
+  text-align: center;
+  align-items: center;
+}
+
+.btn-width {
+  min-width: 190px;
+}
+
+/* Radio inputs */
+
+.radio-box {
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.radio-label {
+  display: flex;
+  cursor: pointer;
+  align-items: center !important;
+  margin: 0;
+  margin-right: 10px;
+}
+
+.radio-input {
+  display: none;
+}
+
+.radio-custom {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+}
+
+.green-rc {
+  border: 2px solid rgb(0, 205, 0);
+}
+
+.yellow-rc {
+  border: 2px solid rgb(233, 199, 9);
+}
+
+.red-rc {
+  border: 2px solid rgb(255, 0, 0);
+}
+
+.radio-inner {
+  width: calc(100% - 5px);
+  height: calc(100% - 5px);
+  background: transparent;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.radio-label input[type='radio']:checked + .radio-custom .radio-inner {
+  background: rgb(0, 205, 0);
+}
+
+.radio-label-yellow input[type='radio']:checked + .radio-custom .radio-inner {
+  background: rgb(233, 199, 9);
+}
+
+.radio-label-female input[type='radio']:checked + .radio-custom .radio-inner {
+  background: rgb(255, 0, 0);
+}
+
+/* Adaptation */
+
+@media (max-width: 991px) {
+  .col-md-12 hr {
+    margin-left: 85px;
+  }
+
+  .col-md-2 {
+    min-width: 135px;
+  }
+
+  .btn-width {
+    min-width: 190px;
+  }
+
+  .navbar-nav:first-child {
+    border-top: 2px solid #ccc;
+    margin-top: 8px;
+  }
+
+  .nav-item:hover {
+    background-color: #1687ff;
+    width: 100px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  .fa-solid {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .col-md-12 {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .lesson-tab {
+    display: inline-block;
+  }
+}
